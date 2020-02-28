@@ -102,6 +102,9 @@
 		viewer.loadGUI(() => {
 			viewer.setLanguage('en');
 			$("#menu_appearance").next().show();
+			$("#menu_tools").next().show();
+			$("#menu_scene").next().show();
+			viewer.toggleSidebar();
 		});
 
         var path = "https://entwine3314.s3.amazonaws.com/entwine/ept.json";

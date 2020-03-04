@@ -33,11 +33,17 @@
 	<!-- INCLUDE SETTINGS HERE -->
 
 	<div class="potree_container" style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; ">
-		<div id="potree_render_area"></div>
+		<div id="potree_render_area">		</div>
 		<div id="potree_sidebar_container"> </div>
 	</div>
 
 	<script>
+
+		// TODO
+		// Implementar parametro para renderização de MDT
+		// viewer.setClassificationVisibility(19, false)
+		// viewer.setClassificationVisibility(20, false)
+
 		let urlParams = new URLSearchParams(window.location.search);
 		let scm = urlParams.get('scm');
 		let xmax = parseFloat(urlParams.get('xmax'));
@@ -146,6 +152,7 @@
 
 		});
 	</script>
+
   </body>
 </html>
 
